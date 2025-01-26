@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #00ff88;
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+}
+
+.converter-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #00ff88;
+    font-weight: 500;
+}
+
+select, input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+select:focus, input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #00ff88;
+}
+
+.convert-btn {
+    width: 100%;
+    padding: 12px;
+    background: #00ff88;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.convert-btn:hover {
+    background: #00cc6a;
+    transform: translateY(-2px);
+}
+
+.result-container {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(0, 255, 136, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.result-container.hidden {
+    display: none;
+}
+
+#conversion-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #00ff88;
+}
+
+.rate-info {
+    color: #cccccc;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.timestamp {
+    color: #999999;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .converter-card {
+        padding: 20px;
+    }
+    
+    #conversion-text {
+        font-size: 20px;
+    }
+}
